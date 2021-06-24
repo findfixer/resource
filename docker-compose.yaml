@@ -11,11 +11,7 @@ services:
     ports:
       - "15432:5432"
     volumes:
-      - ./postgres/db_helpdesk_postgres_init.sql:/docker-entrypoint-initdb.d/db_helpdesk_postgres_init.sql
-      - ./postgres/db_orders_postgres_init.sql:/docker-entrypoint-initdb.d/db_orders_postgres_init.sql
-      - ./postgres/db_products_postgres_init.sql:/docker-entrypoint-initdb.d/db_products_postgres_init.sql
-      - ./postgres/db_profiles_postgres_init.sql:/docker-entrypoint-initdb.d/db_profiles_postgres_init.sql
-      - ./postgres/db_shipping_postgres_init.sql:/docker-entrypoint-initdb.d/db_shipping_postgres_init.sql     
+      - ./postgres/db_helpdesk_postgres_init.sql:/docker-entrypoint-initdb.d/db_helpdesk_postgres_init.sql    
     networks:
       - network-docker
 
