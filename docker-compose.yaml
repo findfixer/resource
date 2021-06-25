@@ -60,7 +60,7 @@ services:
     depends_on:
       - zoo1
     networks:
-      - network-docker      
+      - network-docker    
 
   kowl:
     image: quay.io/cloudhut/kowl:v1.2.2
@@ -74,8 +74,7 @@ services:
     depends_on:
       - kafka
     networks:
-      - network-docker      
-
+      - network-docker
 networks:
   network-docker:
     external: false
